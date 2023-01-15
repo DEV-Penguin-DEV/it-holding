@@ -1,0 +1,30 @@
+.button {
+  @include button-none();
+  width: 77.7vw;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  background: linear-gradient(0deg, #7ecc17, #7ecc17), rgba(255, 255, 255, 0.49);
+  border-radius: 47px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: $main-text-color;
+  padding: 35px 0;
+
+  &::before {
+    @include defaul-pseudo-element(65px);
+    left: 6.2%;
+    top: 13px;
+  }
+
+  &::after {
+    @include defaul-pseudo-element(38px, 34px);
+    right: 4.6%;
+    top: 29px;
+    background: url("./../../public/img/arrow.svg");
+  }
+}
