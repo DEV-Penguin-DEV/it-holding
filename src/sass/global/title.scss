@@ -1,0 +1,11 @@
+.title {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 58px;
+  line-height: 77px;
+  color: $main-text-color;
+  @include margin-bottom(14px);
+
+  text-transform: uppercase;
+}
