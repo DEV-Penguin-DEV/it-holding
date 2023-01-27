@@ -9,4 +9,19 @@
   &::before {
     background-image: url("./../../public/img/bag-with-bg.svg");
   }
+
+  @media (min-width: $min-desktop-size) {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $min-desktop-size) {
+  .portfolio__img {
+    width: 234px;
+    height: 421px;
+
+    .portfolio__item:first-of-type & {
+      width: 303px;
+    }
+  }
 }

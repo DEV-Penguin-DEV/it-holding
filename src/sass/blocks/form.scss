@@ -17,3 +17,9 @@
     height: 61px;
   }
 }
+
+@media (min-width: $min-desktop-size) {
+  .form {
+    display: none;
+  }
+}

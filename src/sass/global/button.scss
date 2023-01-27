@@ -33,4 +33,9 @@
     transform: translateY(-50%);
     background: url("./../../public/img/arrow.svg");
   }
+
+  @media (min-width: $min-desktop-size) {
+    width: 322px;
+    margin: 0;
+  }
 }

@@ -1,11 +1,29 @@
 .products {
   padding-bottom: 630px;
   position: relative;
-  &::before {
-    @include defaul-pseudo-element(263px, 708px);
-    background: url("./../../public/img/cat-bg.png");
-    z-index: -1;
+
+  @media (min-width: $min-desktop-size) {
+    padding-bottom: 809.59px;
+  }
+}
+
+.products__bg {
+  width: 644.89px;
+  height: 659.16px;
+  position: absolute;
+  background: url("./../../public/img/cat-bg.png") no-repeat center left;
+  background-size: contain;
+  z-index: -1;
+  left: -300px;
+  top: 60px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("./../../public/img/cat-bg@2x.png");
+  }
+
+  @media (min-width: $min-desktop-size) {
+    width: 856.56px;
+    height: 939.59px;
     left: 0;
-    top: 60px;
   }
 }

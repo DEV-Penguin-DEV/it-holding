@@ -8,4 +8,9 @@
   @include margin-bottom(14px);
 
   text-transform: uppercase;
+
+  @media (min-width: $min-desktop-size) {
+    font-size: 100px;
+    line-height: 77px;
+  }
 }
