@@ -1,4 +1,10 @@
 .container {
   @include wrapper(14px, 100vw, 1600px);
-  margin: 0 auto;
+  margin: 0;
+
+  @media (min-width: $min-desktop-size) {
+    width: calc(100vw - 105px);
+    padding: 0;
+    padding-left: 105px;
+  }
 }

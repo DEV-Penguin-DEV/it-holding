@@ -1,0 +1,31 @@
+@media (max-width: $max-mobile-size) {
+  .main-footer {
+    padding-bottom: 105px;
+    text-align: center;
+  }
+
+  .main-footer__logo {
+    margin-bottom: 30px;
+  }
+
+  .main-footer__text {
+    max-width: 296px;
+    margin: 0 auto;
+    word-wrap: break-word;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 122% */
+    letter-spacing: 0.05em;
+
+    color: #ffffff;
+  }
+}
+
+@media (min-width: $min-desktop-size) {
+  .main-footer {
+    display: none;
+  }
+}

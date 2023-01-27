@@ -1,0 +1,19 @@
+.form__img-container {
+  position: relative;
+}
+
+.form__button {
+  position: absolute;
+  bottom: 30px;
+  font-size: 40px;
+  line-height: 19px;
+  padding-left: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &::before {
+    background-image: url("./../../public/img/-30.svg");
+    width: 107px;
+    height: 61px;
+  }
+}

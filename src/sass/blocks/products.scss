@@ -1,0 +1,11 @@
+.products {
+  padding-bottom: 630px;
+  position: relative;
+  &::before {
+    @include defaul-pseudo-element(263px, 708px);
+    background: url("./../../public/img/cat-bg.png");
+    z-index: -1;
+    left: 0;
+    top: 60px;
+  }
+}

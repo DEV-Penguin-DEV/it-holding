@@ -1,0 +1,95 @@
+.product {
+  background: rgba(217, 217, 217, 0.25);
+  backdrop-filter: blur(25px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 47px;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+
+  &:not(:last-of-type) {
+    margin-bottom: 35px;
+  }
+
+  &:nth-child(1) {
+    top: 120px;
+    right: 30px;
+    width: 173px;
+    transform: rotate(-9.95deg);
+  }
+
+  &:nth-child(2) {
+    top: 360px;
+    left: 97px;
+    width: 131.55px;
+    transform: rotate(18.27deg);
+
+    & .product__img-container {
+      width: 47px;
+      height: 47px;
+    }
+  }
+
+  &:nth-child(3) {
+    top: 590px;
+    right: 30px;
+    width: 173px;
+    transform: rotate(-20.5deg);
+  }
+}
+
+.product__link {
+  @include button-none;
+}
+
+.product__img-container {
+  width: 65px;
+  height: 66px;
+  background: #ffffff;
+  border-radius: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  /* or 122% */
+
+  text-align: left;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+
+.product__button {
+  @include button-none;
+  width: 63.12px;
+  height: 30px;
+
+  background: #7ecc17;
+  backdrop-filter: blur(25px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 47px;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    @include defaul-pseudo-element(25px, 21px);
+    background: url("./../../public/img/arrow.svg") no-repeat center center;
+    background-size: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

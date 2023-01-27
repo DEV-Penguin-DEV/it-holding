@@ -1,0 +1,109 @@
+.first-screen {
+  padding-top: 133px;
+  font-family: "Exo 2";
+  font-style: normal;
+  position: relative;
+
+  &::before {
+    z-index: -1;
+    @include defaul-pseudo-element(131px, 183px);
+    background: url("./../../public/img/Rectangle\ 42.png") no-repeat center
+      center;
+    background-size: cover;
+    border-radius: 47px;
+    top: 40px;
+    right: -6%;
+  }
+
+  &::after {
+    z-index: -1;
+    top: 280px;
+    @include defaul-pseudo-element(219px, 423px);
+    background: url("./../../public/img/Rectangle\ 42.png") no-repeat center
+      center;
+    background-size: cover;
+    border-radius: 47px;
+    right: -17%;
+  }
+}
+
+.first-screen__decor-container {
+  width: 100%;
+  height: 100%;
+
+  &::before {
+    z-index: -1;
+    @include defaul-pseudo-element(134px, 288px);
+    background: url("./../../public/img/Rectangle\ 42.png") no-repeat center
+      center;
+    background-size: cover;
+    border-radius: 47px;
+    top: 200px;
+    left: -6%;
+  }
+}
+
+.first-screen__title {
+  font-weight: 900;
+  font-size: 57px;
+  line-height: 77px;
+  /* or 135% */
+  letter-spacing: 0.05em;
+
+  color: $main-text-color;
+  @include margin-bottom(30px);
+
+  @media (min-width: $min-desktop-size) {
+    font-size: 71px;
+    line-height: 71px;
+  }
+
+  @media (min-width: $desktop--2-size) {
+    font-size: 111px;
+    line-height: 111px;
+  }
+
+  @media (min-width: $desktop--4-size) {
+    font-size: 131px;
+    line-height: 131px;
+  }
+
+  @media (min-width: $desktop--5-size) {
+    font-size: 151px;
+    line-height: 151px;
+  }
+}
+
+.first-screen__undertitle-text {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 26px;
+  max-width: 177px;
+  /* or 93% */
+
+  letter-spacing: 0.05em;
+  color: $decor-bg-color;
+  @include margin-bottom(213px);
+  margin-left: 100px;
+}
+
+.first-screen__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 40px;
+  /* or 62% */
+
+  letter-spacing: 0.05em;
+
+  color: $main-text-color;
+  @include margin-bottom(70px);
+  max-width: 293px;
+}
+
+.first-screen__button {
+  &::before {
+    background-image: url("./../../public/img/buy-bag.svg");
+  }
+}

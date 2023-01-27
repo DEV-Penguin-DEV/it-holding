@@ -1,12 +1,18 @@
 @import "global/visually-hidden.scss";
 @import "global/variables.scss";
 @import "global/impurities.scss";
+@import "global/ul.scss";
 @import "global/container.scss";
 @import "global/title.scss";
 @import "global/page.scss";
 @import "global/text.scss";
 @import "global/button.scss";
+@import "global/block.scss";
 
 @import "blocks/main-header.scss";
 @import "blocks/first-screen.scss";
+@import "blocks/portfolio.scss";
+@import "blocks/products.scss";
+@import "blocks/product.scss";
+@import "blocks/form.scss";
 @import "blocks/main-footer.scss";
