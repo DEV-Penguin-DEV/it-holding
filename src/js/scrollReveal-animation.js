@@ -3,7 +3,7 @@ import ScrollReveal from 'scrollreveal';
 
 const move = (elem, origin, distance = '250px', duration = 1200) => {
   ScrollReveal().reveal(elem, {
-    reset: true,
+    reset: false,
     distance: distance,
     origin: origin,
     duration: duration,
@@ -12,7 +12,7 @@ const move = (elem, origin, distance = '250px', duration = 1200) => {
 
 const scale = (elem, duration = 1500) => {
   ScrollReveal().reveal(elem, {
-    reset: true,
+    reset: false,
     scale: 1.4,
     duration: duration,
     distance: '0px',
@@ -29,3 +29,4 @@ move('.text', 'right');
 move('.portfolio__item', 'top', '350px', 1500);
 scale('.product', 1700);
 move('.products__bg', 'left');
+move('.form__input', 'left');

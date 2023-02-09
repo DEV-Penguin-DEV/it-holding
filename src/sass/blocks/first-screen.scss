@@ -24,12 +24,13 @@
     &::before {
       z-index: -1;
       @include defaul-pseudo-element(134px, 288px);
-      background: url("./../../public/img/Rectangle\ 42.png") no-repeat center
+      background: url("./../../public/img/Intersect-1.png") no-repeat center
         center;
       background-size: cover;
       border-radius: 47px;
       top: 200px;
       left: -6%;
+      filter: brightness(0.3);
 
       @media (min-width: $min-desktop-size) {
         width: 282px;
@@ -49,12 +50,13 @@
     &::before {
       z-index: -1;
       @include defaul-pseudo-element(131px, 183px);
-      background: url("./../../public/img/Rectangle\ 42.png") no-repeat center
+      background: url("./../../public/img/Intersect.png") no-repeat center
         center;
       background-size: cover;
       border-radius: 47px;
       top: 40px;
       right: -6%;
+      filter: hue-rotate(269deg);
 
       @media (min-width: $min-desktop-size) {
         width: 185px;
@@ -72,8 +74,7 @@
       z-index: -1;
       top: 280px;
       @include defaul-pseudo-element(219px, 423px);
-      background: url("./../../public/img/Rectangle\ 42.png") no-repeat center
-        center;
+      background: url("./../../public/img/1.png") no-repeat center center;
       background-size: cover;
       border-radius: 47px;
       right: -17%;
@@ -95,8 +96,8 @@
 
 .first-screen__title {
   font-weight: 900;
-  font-size: 57px;
-  line-height: 77px;
+  font-size: 51px;
+  line-height: 53px;
   /* or 135% */
   letter-spacing: 0.05em;
 
@@ -162,6 +163,6 @@
 
 .first-screen__button {
   &::before {
-    background-image: url("./../../public/img/buy-bag.svg");
+    background-image: url("./../../public/img/speak-about-project.svg");
   }
 }

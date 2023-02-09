@@ -2,7 +2,7 @@
   font-family: "Exo 2";
   font-style: normal;
   font-weight: 900;
-  font-size: 58px;
+  font-size: 45px;
   line-height: 77px;
   color: $main-text-color;
   @include margin-bottom(14px);
@@ -10,7 +10,7 @@
   text-transform: uppercase;
 
   @media (min-width: $min-desktop-size) {
-    font-size: 100px;
+    font-size: 85px;
     line-height: 77px;
   }
 }

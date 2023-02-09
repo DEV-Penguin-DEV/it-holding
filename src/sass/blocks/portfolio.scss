@@ -1,3 +1,7 @@
+.portfolio__title {
+  font-size: 58px;
+}
+
 .portfolio__list {
   display: flex;
   overflow-x: scroll;
@@ -6,6 +10,7 @@
 }
 
 .portfolio__button {
+  text-align: center;
   &::before {
     background-image: url("./../../public/img/bag-with-bg.svg");
   }

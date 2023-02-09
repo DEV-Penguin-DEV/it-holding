@@ -1,15 +1,21 @@
 .form__img-container {
   position: relative;
+  background: rgba(217, 217, 217, 0.3);
+
+  border-radius: 47px;
+  padding: 40px 32px;
 }
 
 .form__button {
-  position: absolute;
-  bottom: 30px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 700;
   font-size: 40px;
   line-height: 19px;
-  padding-left: 25px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto;
+  padding-left: 125px;
+  text-align: center;
+  margin-top: 32px;
 
   &::before {
     background-image: url("./../../public/img/-30.svg");
@@ -18,8 +24,49 @@
   }
 }
 
-@media (min-width: $min-desktop-size) {
-  .form {
-    display: none;
+.form__title {
+  font-size: 33px;
+  line-height: 44px;
+  margin-bottom: 33px;
+}
+
+.form__input {
+  background: #aaaaaa;
+  border: none;
+  border-radius: 47px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 25px 36px;
+  box-sizing: border-box;
+  color: #ffffff;
+  transition: 1s;
+
+  &::placeholder {
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &:hover {
+    transition: 1s;
+    outline: 3px solid #000000;
+  }
+}
+
+.form__inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form {
+  @media (min-width: $min-desktop-size) {
+    padding-left: 60px;
   }
 }
