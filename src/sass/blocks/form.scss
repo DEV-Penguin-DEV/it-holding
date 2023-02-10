@@ -4,6 +4,11 @@
 
   border-radius: 47px;
   padding: 40px 32px;
+  box-sizing: border-box;
+
+  @media (min-width: 900px) {
+    width: 37.5vw;
+  }
 }
 
 .form__button {
@@ -22,12 +27,22 @@
     width: 107px;
     height: 61px;
   }
+
+  @media (min-width: 900px) {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 .form__title {
   font-size: 33px;
   line-height: 44px;
   margin-bottom: 33px;
+
+  @media (min-width: 900px) {
+    font-size: 53px;
+    line-height: 64px;
+  }
 }
 
 .form__input {
@@ -55,7 +70,7 @@
 
   &:hover {
     transition: 1s;
-    outline: 3px solid #000000;
+    background: #777777;
   }
 }
 
@@ -66,7 +81,9 @@
 }
 
 .form {
-  @media (min-width: $min-desktop-size) {
-    padding-left: 60px;
+  @media (min-width: 900px) {
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
   }
 }
