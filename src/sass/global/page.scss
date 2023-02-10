@@ -21,4 +21,8 @@ html {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   overflow-x: clip;
+
+  @media (max-width: $min-desktop-size) {
+    overflow-x: hidden;
+  }
 }
