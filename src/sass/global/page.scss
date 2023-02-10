@@ -24,5 +24,6 @@ html {
 
   @media (max-width: $min-desktop-size) {
     overflow-x: hidden;
+    max-width: 100vw;
   }
 }
