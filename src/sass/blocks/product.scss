@@ -10,6 +10,7 @@
   flex-direction: column;
   position: absolute;
   transition: 1.5s;
+  overflow: hidden;
 
   &:not(:last-of-type) {
     margin-bottom: 35px;
