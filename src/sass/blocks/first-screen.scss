@@ -82,7 +82,7 @@
       background: url("./../../public/img/1.png") no-repeat center center;
       background-size: cover;
       border-radius: 47px;
-      left: 75%;
+      left: 63%;
 
       @media (min-width: $min-desktop-size) {
         width: 282px;
@@ -108,7 +108,7 @@
 
   color: $main-text-color;
   @include margin-bottom(30px);
-  max-width: 50%;
+  max-width: 95%;
 
   @media (min-width: $min-desktop-size) {
     font-size: 71px;
@@ -118,7 +118,7 @@
   @media (min-width: $desktop--2-size) {
     font-size: 71px;
     line-height: 71px;
-    max-width: 50%;
+    max-width: 70%;
     margin-top: 25px;
   }
 

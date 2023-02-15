@@ -8,6 +8,7 @@
 
   @media (min-width: 900px) {
     width: 37.5vw;
+    max-width: 550px;
   }
 }
 
@@ -88,5 +89,6 @@
     margin: 0 auto;
     margin-bottom: 82px;
     display: flex;
+    justify-content: space-between;
   }
 }
