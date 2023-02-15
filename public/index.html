@@ -87,13 +87,21 @@
     <h1 class="page__title visually-hidden">Ukraine code</h1>
 
     <header class="main-header container">
-      <img
-        src="img/logo.png"
-        width="66"
-        height="66"
-        alt=""
-        class="main-header__logo"
-      />
+      <picture>
+        <source
+          media="(min-width: 900px)"
+          srcset="img/logo-desktop.svg"
+          width="336"
+          height="124"
+        />
+        <img
+          src="img/logo.svg"
+          width="154"
+          height="154"
+          alt=""
+          class="main-header__logo"
+        />
+      </picture>
     </header>
 
     <main class="main-content">
@@ -271,7 +279,15 @@
     </main>
 
     <footer class="main-footer block-animation">
-      <img src="img/logo.png" alt="" class="main-footer__logo" />
+      <picture>
+        <source
+          media="(min-width: 900px)"
+          srcset="img/logo-desktop.svg"
+          width="336"
+          height="124"
+        />
+        <img src="img/logo.svg" alt="" class="main-footer__logo" />
+      </picture>
       <p class="main-footer__text">UkraineCode © 2023</p>
     </footer>
     <script src="bundle.js"></script>

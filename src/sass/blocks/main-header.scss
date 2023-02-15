@@ -3,3 +3,9 @@
   left: 0;
   top: 40px;
 }
+
+.main-header__logo {
+  @media (min-width: $desktop--2-size) {
+    margin-bottom: 25px;
+  }
+}
