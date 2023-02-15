@@ -72,7 +72,7 @@
     &::after {
       z-index: -1;
       top: 280px;
-      @include defaul-pseudo-element(219px, 423px);
+      @include defaul-pseudo-element(160px, 340px);
       background: url("./../../public/img/1.png") no-repeat center center;
       background-size: cover;
       border-radius: 47px;
@@ -88,6 +88,12 @@
       @media (max-width: $desktop--2-size) and (min-width: $min-desktop-size) {
         width: 256px;
         height: 400px;
+      }
+
+      @media (min-width: $desktop--2-size) {
+        font-size: 28px;
+        line-height: 32px;
+        @include margin-bottom(15px);
       }
     }
   }
