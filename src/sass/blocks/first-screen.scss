@@ -24,7 +24,7 @@
     &::before {
       z-index: -1;
       @include defaul-pseudo-element(134px, 288px);
-      background: url("./../../public/img/Intersect-1.png") no-repeat center
+      background: url("./../../public/img/Intersect.png") no-repeat center
         center;
       background-size: cover;
       border-radius: 47px;
@@ -50,13 +50,12 @@
     &::before {
       z-index: -1;
       @include defaul-pseudo-element(131px, 183px);
-      background: url("./../../public/img/Intersect.png") no-repeat center
+      background: url("./../../public/img/Intersect-1.png") no-repeat center
         center;
       background-size: cover;
       border-radius: 47px;
       top: 40px;
       right: -6%;
-      filter: hue-rotate(269deg);
 
       @media (min-width: $min-desktop-size) {
         width: 185px;
