@@ -1,190 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='stylesheet' href='main.css'>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;900&family=Montserrat:wght@600&display=swap"
-    rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-    }
-
-    .preloader {
-      position: fixed;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      overflow: hidden;
-      background-color: #21D4FD;
-      background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-      z-index: 1001;
-      color: #eee;
-    }
-
-    .preloader__image {
-      position: relative;
-      top: 50%;
-      left: 50%;
-      width: 70px;
-      height: 70px;
-      margin-top: -35px;
-      margin-left: -35px;
-      text-align: center;
-      animation: preloader-rotate 2s infinite linear;
-    }
-
-    @keyframes preloader-rotate {
-      100% {
-        transform: rotate(360deg);
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;900&family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
       }
-    }
 
-    .loaded_hiding .preloader {
-      transition: 0.3s opacity;
-      opacity: 0;
-    }
+      .preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        background-color: #21d4fd;
+        background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+        z-index: 1001;
+        color: #eee;
+      }
 
-    .loaded .preloader {
-      display: none;
-    }
-  </style>
-  <script>
-    window.onload = function () {
-      document.body.classList.add('loaded_hiding');
-      window.setTimeout(function () {
-        document.body.classList.add('loaded');
-        document.body.classList.remove('loaded_hiding');
-      }, 500);
-    }
-  </script>
-  <!-- TODO -->
-  <title>IT HOLDING</title>
-</head>
+      .preloader__image {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+        margin-top: -35px;
+        margin-left: -35px;
+        text-align: center;
+        animation: preloader-rotate 2s infinite linear;
+      }
 
-<body class="page">
-  <!-- Прелоадер -->
-  <div class="preloader">
-    <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-      <path fill="currentColor"
-        d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
-      </path>
-    </svg>
-  </div>
+      @keyframes preloader-rotate {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
 
-  <!-- TODO -->
-  <h1 class="page__title visually-hidden">IT Holding</h1>
+      .loaded_hiding .preloader {
+        transition: 0.3s opacity;
+        opacity: 0;
+      }
 
-  <header class="main-header container">
-    <img src="img/logo.png" width="66" height="66" alt="" class="main-header__logo">
-  </header>
+      .loaded .preloader {
+        display: none;
+      }
+    </style>
+    <script>
+      window.onload = function () {
+        document.body.classList.add("loaded_hiding");
+        window.setTimeout(function () {
+          document.body.classList.add("loaded");
+          document.body.classList.remove("loaded_hiding");
+        }, 500);
+      };
+    </script>
+    <title>Ukraine code</title>
+  </head>
 
-  <main class="main-content">
-    <section class="first-screen container block">
-      <div class="first-screen__decor-container first-screen__decor-container--1"></div>
-      <div class="first-screen__decor-container first-screen__decor-container--2"></div>
-      <h2 class="first-screen__title">ДІДЖИТАЛ РІШЕННЯ ДЛЯ<br />
-        ВАШОГО<br />
-        БІЗНЕСУ</h2>
-      <p class="first-screen__undertitle-text">Ukraine Code</p>
-      <p class="first-screen__text">РОЗРОБКА САЙТУ ПІД ЗАВДАННЯ БІЗНЕСУ</p>
-      <button class="first-screen__button button">ОБГОВОРИТИ ПРОЕКТ</button>
-    </section>
+  <body class="page">
+    <!-- Прелоадер -->
+    <div class="preloader">
+      <svg
+        class="preloader__image"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <path
+          fill="currentColor"
+          d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"
+        ></path>
+      </svg>
+    </div>
 
-    <section class="portfolio container block">
-      <h2 class="portfolio__title title">PORTFOLIO</h2>
+    <h1 class="page__title visually-hidden">Ukraine code</h1>
 
-      <ul class="portfolio__list">
-        <li class="portfolio__item">
-          <a class="portfolio__link" href="#" target="_blank" rel="noopener noreferrer">
-            <img src="img/2.png" width="173" height="333" alt="" class="portfolio__img">
-          </a>
-        </li>
-        <li class="portfolio__item">
-          <a class="portfolio__link" href="#" target="_blank" rel="noopener noreferrer">
-            <img src="img/2.png" width="173" height="333" alt="" class="portfolio__img">
-          </a>
-        </li>
-        <li class="portfolio__item">
-          <a class="portfolio__link" href="#" target="_blank" rel="noopener noreferrer">
-            <img src="img/2.png" width="173" height="333" alt="" class="portfolio__img">
-          </a>
-        </li>
-      </ul>
+    <header class="main-header container">
+      <img
+        src="img/logo.png"
+        width="66"
+        height="66"
+        alt=""
+        class="main-header__logo"
+      />
+    </header>
 
-      <button class="portfolio__button button">BEHANCE</button>
-    </section>
+    <main class="main-content">
+      <section class="first-screen container block">
+        <div
+          class="first-screen__decor-container first-screen__decor-container--1"
+        ></div>
+        <div
+          class="first-screen__decor-container first-screen__decor-container--2"
+        ></div>
+        <h2 class="first-screen__title">
+          ДІДЖИТАЛ РІШЕННЯ ДЛЯ<br />
+          ВАШОГО<br />
+          БІЗНЕСУ
+        </h2>
+        <p class="first-screen__undertitle-text">Ukraine Code</p>
+        <p class="first-screen__text">РОЗРОБКА САЙТУ ПІД ЗАВДАННЯ БІЗНЕСУ</p>
+        <button class="first-screen__button button c-btn--ca">
+          ОБГОВОРИТИ ПРОЕКТ
+        </button>
+      </section>
 
-    <section class="products container block">
-      <h2 class="products__title title">НАПРАВЛЕННЯ</h2>
+      <section class="portfolio container block">
+        <h2 class="portfolio__title title">PORTFOLIO</h2>
 
-      <div class="products__bg"></div>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <a
+              class="portfolio__link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="img/2.png"
+                width="173"
+                height="333"
+                alt=""
+                class="portfolio__img"
+              />
+            </a>
+          </li>
+          <li class="portfolio__item">
+            <a
+              class="portfolio__link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="img/2.png"
+                width="173"
+                height="333"
+                alt=""
+                class="portfolio__img"
+              />
+            </a>
+          </li>
+          <li class="portfolio__item">
+            <a
+              class="portfolio__link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="img/2.png"
+                width="173"
+                height="333"
+                alt=""
+                class="portfolio__img"
+              />
+            </a>
+          </li>
+        </ul>
 
-      <ul class="products__list">
-        <li class="products__item product">
-          <button class="product__link" href="#">
-            <div class="product__img-container">
-              <img src="img/bag.svg" width="34" height="33" alt="" class="product__img">
-            </div>
+        <a
+          href="https://www.behance.net/UkraineCode_UA"
+          class="portfolio__button button"
+          target="_blank"
+          >BEHANCE</a
+        >
+      </section>
 
-            <h3 class="product__title">UI/UX</h3>
-            <button type="button" class="product__button"></button>
-          </button>
-        </li>
+      <section class="products container block">
+        <h2 class="products__title title">НАПРАВЛЕННЯ</h2>
 
-        <li class="products__item product">
-          <button class="product__link" href="#">
-            <div class="product__img-container">
-              <img src="img/web.svg" width="25" height="25" alt="" class="product__img">
-            </div>
+        <div class="products__bg"></div>
 
-            <h3 class="product__title">Web<br />
-              sites</h3>
-            <button type="button" class="product__button"></button>
-          </button>
-        </li>
+        <ul class="products__list">
+          <li class="products__item product">
+            <button class="product__link" href="#">
+              <div class="product__img-container">
+                <img
+                  src="img/ui-ux.svg"
+                  width="34"
+                  height="33"
+                  alt=""
+                  class="product__img"
+                />
+              </div>
 
-        <li class="products__item product">
-          <button class="product__link" href="#">
-            <div class="product__img-container">
-              <img src="img/bag.svg" width="34" height="33" alt="" class="product__img">
-            </div>
+              <h3 class="product__title">UI/UX</h3>
+              <button type="button" class="product__button"></button>
+            </button>
+          </li>
 
-            <h3 class="product__title">E-commerce</h3>
-            <button type="button" class="product__button"></button>
-          </button>
-        </li>
-      </ul>
-    </section>
+          <li class="products__item product">
+            <button class="product__link" href="#">
+              <div class="product__img-container">
+                <img
+                  src="img/web.svg"
+                  width="25"
+                  height="25"
+                  alt=""
+                  class="product__img"
+                />
+              </div>
 
-    <section class="form block container">
-      <h2 class="form__title title">ОТРИМАЙТЕ
-        ЗНИЖКУ
-        НА ПЕРШЕ ЗАМОВЛЕННЯ</h2>
+              <h3 class="product__title">
+                Web<br />
+                sites
+              </h3>
+              <button type="button" class="product__button"></button>
+            </button>
+          </li>
 
-      <form class="form__img-container" action="" method="POST">
-        <div class="form__inputs-container">
-          <input class="form__input" type="text" name="name" placeholder="Ім’я">
-          <input class="form__input" type="tel" name="tel" placeholder="Номер">
-          <input class="form__input" type="email" name="email" placeholder="Почта">
-        </div>
+          <li class="products__item product">
+            <button class="product__link" href="#">
+              <div class="product__img-container">
+                <img
+                  src="img/e-commerce.svg"
+                  width="34"
+                  height="33"
+                  alt=""
+                  class="product__img"
+                />
+              </div>
 
-        <button class="form__button button">GET</button>
-      </form>
-    </section>
-  </main>
+              <h3 class="product__title">E-commerce</h3>
+              <button type="button" class="product__button"></button>
+            </button>
+          </li>
+        </ul>
+      </section>
 
-  <footer class="main-footer block-animation">
-    <img src="img/logo.png" alt="" class="main-footer__logo">
-    <p class="main-footer__text">UkraineCode © 2023</p>
-  </footer>
-  <script src="bundle.js"></script>
-</body>
+      <section id="form" class="form block container">
+        <h2 class="form__title title">ОТРИМАЙТЕ ЗНИЖКУ НА ПЕРШЕ ЗАМОВЛЕННЯ</h2>
 
+        <form class="form__img-container" action="" method="POST">
+          <div class="form__inputs-container">
+            <input
+              class="form__input"
+              type="text"
+              name="name"
+              placeholder="Ім’я"
+            />
+            <input
+              class="form__input"
+              type="tel"
+              name="tel"
+              placeholder="Номер"
+            />
+            <input
+              class="form__input"
+              type="email"
+              name="email"
+              placeholder="Почта"
+            />
+          </div>
+
+          <button class="form__button button">ВІДПРАВИТИ</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="main-footer block-animation">
+      <img src="img/logo.png" alt="" class="main-footer__logo" />
+      <p class="main-footer__text">UkraineCode © 2023</p>
+    </footer>
+    <script src="bundle.js"></script>
+  </body>
 </html>

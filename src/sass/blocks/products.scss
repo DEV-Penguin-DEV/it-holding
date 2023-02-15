@@ -17,13 +17,11 @@
   left: -300px;
   top: 60px;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("./../../public/img/cat-bg@2x.png");
-  }
-
   @media (min-width: $min-desktop-size) {
     width: 856.56px;
     height: 939.59px;
-    left: 0;
+    left: 50px;
+    top: 100px;
+    background-image: url("./../../public/img/products-bg-desktop.png");
   }
 }

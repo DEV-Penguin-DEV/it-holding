@@ -110,18 +110,21 @@
   }
 
   @media (min-width: $desktop--2-size) {
-    font-size: 111px;
-    line-height: 111px;
+    font-size: 100px;
+    line-height: 100px;
+    max-width: 50%;
   }
 
   @media (min-width: $desktop--4-size) {
-    font-size: 131px;
-    line-height: 131px;
+    font-size: 111px;
+    line-height: 111px;
+    max-width: 35%;
   }
 
   @media (min-width: $desktop--5-size) {
-    font-size: 151px;
-    line-height: 151px;
+    font-size: 131px;
+    line-height: 131px;
+    max-width: 30%;
   }
 }
 
